@@ -2,6 +2,7 @@
 
 while true;
 do
-	docker volume rm $(docker volume ls -qf dangling=true)
+	echo "Checking ..."
+	docker volume rm $(docker volume ls -qf dangling=true) 2>/dev/null
 	sleep 60
 done
