@@ -14,4 +14,4 @@ Mount the `/var/run/docker.sock` and the binary `/usr/local/bin/docker` into con
 ## Check
 `$ docker logs cleaner`
 
-Double check it's working every 60s, it printout `Checking ...` while launch the cleaning task
+Double check it's working every 60s, it print out `Checking ...` while launch the cleaning task
