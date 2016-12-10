@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 timestamp() {
     echo [`date`] $@
@@ -6,7 +6,7 @@ timestamp() {
 
 while true;
 do
-	timestamp Checking the dangling volumes
+	timestamp Checking dangling volumes
 	docker volume rm $(docker volume ls -qf dangling=true) 2>/dev/null
 	sleep 60
 done
