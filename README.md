@@ -7,9 +7,9 @@ Automatically cleanup dangling volumes
 `$ docker built -t rf37535/cleaner .`
 
 ## Run
-`$ docker run -d --name cleaner --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker rf37535/cleaner`
+`$ docker run -d --name cleaner --restart=always -v /var/run/docker.sock:/var/run/docker.sock rf37535/cleaner`
 
-Mount the `/var/run/docker.sock` and the binary `/usr/bin/docker` into container in order to control docker daemon inside container
+Mount `/var/run/docker.sock` into container in order to control docker daemon inside container
 
 ## Check
 `$ docker logs cleaner`
